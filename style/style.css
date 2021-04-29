@@ -1,0 +1,213 @@
+:root{
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    --Transparent_white: hsla(0, 0%, 100%, 0.75);
+    --Very_light_gray: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+    body{
+        background-color:var(--Very_light_gray);
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .card__container{
+        width: 875px;
+        height: 475px;
+        display: flex;
+        justify-content: stretch;
+        align-items: stretch;
+        color: var(--Very_light_gray);
+        border-radius: .5rem;
+    }
+    
+    .card__container div{
+        padding: 3rem 2.8rem;
+    }
+    
+    .card__container div h1{
+        text-transform: uppercase;
+        font-size: 2.8rem;
+        margin-top: 1.3rem;
+        margin-bottom: 1.3rem;
+        font-family: 'Big Shoulders Display', cursive;
+    }
+    
+    
+    .card__container div p{
+        color: var(--Transparent_white);
+        margin-bottom: 6rem;
+        line-height: 1.6;
+    }
+    
+    .card__container div button{
+        width: 140px;
+        font-weight: bold;
+        outline: none;
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem;
+        border: solid 1px var(--Very_light_gray);
+        border-radius: 2rem;
+        background-color: var(--Very_light_gray);
+    }
+    
+    .card__container div button:hover{
+        width: 140px;
+        font-weight: bold;
+        border: solid 2px var(--Very_light_gray);
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 2rem;
+        color: var(--Very_light_gray);
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    .card__sedans {
+        background-color: var(--Bright_orange);
+        border-radius: .5rem 0 0  .5rem;
+    }
+    
+    .card__sedans button{
+        color: var(--Bright_orange);
+    }
+    
+    .card__suvs{
+        background-color: var(--Dark_cyan);
+    }
+    
+    .card__suvs button{
+        color: var(--Dark_cyan);
+    }
+    
+    .card__luxury {
+        background-color: var(--Very_dark_cyan);
+        border-radius: 0 .5rem .5rem  0;
+    }
+    
+    .card__luxury button{
+        color: var(--Very_dark_cyan);
+    }
+    
+    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+    
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 768px){
+    body{
+        background-color:var(--Very_light_gray);
+        height: auto;
+        padding: 1rem;
+    }
+    
+    .card__container{
+        width: 99%;
+        color: var(--Very_light_gray);
+        border-radius: .5rem;
+    }
+    
+    .card__container div{
+        padding: 3rem 2.8rem;
+    }
+    
+    .card__container div h1{
+        text-transform: uppercase;
+        font-size: 2.8rem;
+        margin-top: 1.3rem;
+        margin-bottom: 1.3rem;
+        font-family: 'Big Shoulders Display', cursive;
+    }
+    
+    
+    .card__container div p{
+        color: var(--Transparent_white);
+        margin-bottom: 6rem;
+        line-height: 1.6;
+    }
+    
+    .card__container div button{
+        width: 140px;
+        font-weight: bold;
+        outline: none;
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem;
+        border: solid 1px var(--Very_light_gray);
+        border-radius: 2rem;
+        background-color: var(--Very_light_gray);
+    }
+    
+    .card__container div button:hover{
+        width: 140px;
+        font-weight: bold;
+        border: solid 2px var(--Very_light_gray);
+        font-size: 1rem;
+        text-align: center;
+        padding: 1rem;
+        border-radius: 2rem;
+        color: var(--Very_light_gray);
+        background-color: transparent;
+        cursor: pointer;
+    }
+    
+    .card__sedans {
+        background-color: var(--Bright_orange);
+        border-radius: .5rem .5rem 0 0;
+    }
+    
+    .card__sedans button{
+        color: var(--Bright_orange);
+    }
+    
+    .card__suvs{
+        background-color: var(--Dark_cyan);
+    }
+    
+    .card__suvs button{
+        color: var(--Dark_cyan);
+    }
+    
+    .card__luxury {
+        background-color: var(--Very_dark_cyan);
+        border-radius: 0 0 .5rem .5rem;
+    }
+    
+    .card__luxury button{
+        color: var(--Very_dark_cyan);
+    }
+    
+    
+    .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+    
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
